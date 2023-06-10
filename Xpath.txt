@@ -1,0 +1,77 @@
+https://www.lambdatest.com/blog/complete-guide-for-using-xpath-in-selenium-with-examples/  =====website
+
+
+https://www.manipalhospitals.com/self-registration/
+
+Xpath
+=======
+
+//tagname[@attribute='value']------------general syntax
+
+ex:- //input[@name='shiva']
+
+//tagname[contains(attribute, 'value')]------given string considered as a substring
+
+name = sigini  value==forgotten account number
+
+ex:- //input[contains(signin,'forgotten']
+
+
+XPath using Text()
+==================
+The text() method is used in XPath whenever we have a text defined in an HTML tag, 
+and we wish to identify that element via text. 
+
+//tagname[text()='  ']-----if u have any links then we also use text methiod
+
+ex:-//a[text()='click here']
+
+
+
+XPath using Logical Operators: OR & AND
+===========================================
+
+The syntax for using these operators are:
+
+OR
+
+XPath=//tagname[@attribute1=value1 OR @attribute2=value1]
+
+AND
+
+XPath=//tagname[@attribute1=value1 AND @attribute2=value1]
+
+
+XPath using Starts-With()
+============================
+The Starts-With() method is similar to the Contains() method. 
+It is helpful in the case of web elements whose attribute value can change dynamically(ex:-phone no...etc).
+In the Starts-With method, the starting value of the attribute’s text is used for locating the element.
+
+Below is the syntax for using Starts-With() method:
+
+1 //tagname[starts-with(@attribute,value)]
+
+ex:- //input[starts-with(@placeholder,'Phone')]
+
+
+XPath using Index
+=====================
+Indexes can also be helpful in such cases where the same XPath is returning you multiple web elements.
+ Let us understand how to use Indexes in such cases by using the Company Size dropdown button on the Signup page. 
+First, we will use a generic XPath for the web element and later use an index for locating the exact element.
+
+there are two dropdowns on the web page.whichever you want ddl you mention index that suppos if u want 2nd dd.
+EX:--(//div[@class='form-group']//select)[2]
+
+
+Chained XPath in Selenium
+===============================
+
+1 //tagname1[@attribute1=value1]//tagname2[@attribute2=value2]
+
+Let us write a chained XPath for the I agree to LambdaTest’s Privacy Policy text after the checkbox on the LambdaTest Signup page as highlighted below.
+Here, we first locate the checkbox using the label tag and then navigate to the text that follows the checkbox.
+
+
+ex:- //label[@class='i_agree']//span[@data-amplitude='R_pp']

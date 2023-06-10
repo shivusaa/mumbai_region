@@ -1,0 +1,16 @@
+  
+
+we need to filter the particular checbox by adding extra xpath information like above is
+
+
+4) select Last 2 check boxes
+Total no ofcheckboxes-no of checkboxes want to select==starting index
+
+
+
+getWindowHandle()
+it is a method by which we can get the ID for single browser window .
+at the every time when you get the window id dynamically window id will be changed at the run time.
+
+
+//a[text()='OrangeHRM, Inc']

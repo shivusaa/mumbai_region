@@ -1,0 +1,43 @@
+implicit wait
+================
+
+driver.manage.timeout.implicitlywait(time) 
+
+EX:- driver.manage.timeout.implicitlywait(Duration.ofSeconds(5)) 
+
+In your application speed is more then some web element take time to loading the page if any execption came then it causes synchronization.
+To handle this we can use implicit and explicit method.
+
+
+Explicit methods
+================
+
+--It is applicable for only particular webelements
+--its applicable in multiple times
+
+
+WebDriverWait w = new WebDriverWait();
+
+WebElement element = w.until(ExpectedConditions.vissiblityOfElementLocated(By.));
+element.click();
+
+FluentWait Method
+
+==================
+this is also similar to WebDriverWait with more flexibilty in polling time ignoring exceptions
+
+forexample:- In our application the web element contains maximum waiting time is 30seconds but we have to declare polling time=5sec,
+for every 5 seconds page reloading weather this webelement will be there or not until tim is reached up to 30 sec
+
+30/5=6 times page is relading
+
+syntax:
+-------
+	// this is Fluent wait declaration part
+
+		Wait<WebDriver> mywait = new FluentWait<WebDriver>(driver)
+				.withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofSeconds(5))
+				.ignoring(NoSuchElementException.class);
+
+

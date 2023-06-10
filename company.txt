@@ -1,0 +1,50 @@
+Infiray Software Private Limited----Hyderbad---2016
+
+LTECH SOLUTIONS PRIVATE LIMITED---BANGALORE--2016
+
+
+
+industry 
+
+MICROHAZE TECHNOLOGIES PRIVATE LIMITED----Bangalore--2018
+
+Ltech solutions pvt ltd----5.0 start
+
+
+
+
+
+
+
+Experienced in bug tracking, reporting and using JIRA for global test management
+
+Experienced in MAVEN to create projects, JAR files,POM.xml with artifacts and dependencies.
+Experience in Web debugging tools like Xpath,FirePath and Firebug also provided efficent locators for strategies like Xpath and CSS to run web driven scripts.
+
+Developed an automated scripts and frame works using Java, C#.
+Good Experience on TestNG framework for Unit testing, Maven and Ant for Project building tool,Jenkins for Continuous Integration
+
+Excelent experience with source version control tool such as Git
+
+Expertise in Backend testing using MS SQL,Oracle...etc.
+
+
+C,C++,Java,C#,HTML,XML,SQL...etc
+
+Testing Tools: Selenium Web driver,Junit,TestNG.
+Defect Tracking Tools:Jira
+
+Testing Framework:JUnit, TestNG
+
+Built Tools:ANT,Maven
+
+Continuous Integration Tools:Jenkins
+
+Methodologies: Agile(Scrum)
+
+Databases:SQL Server, Oracle
+
+Repository System: gith
+
+==========================================
+
